@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --primary: 263.4 70% 50.4%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 189.3 94.6% 43.5%;
+    --secondary-foreground: 222.2 84% 4.9%;
+
+    --card: 217.2 32.6% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --radius: 0.75rem;
+
+    --critical: 0 84.2% 60.2%;
+    --critical-foreground: 210 40% 98%;
+
+    --success: 142.1 76.2% 36.3%;
+    --success-foreground: 355.7 100% 97.3%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 222.2 84% 4.9%;
+
+    --info: 199 89% 48%;
+    --info-foreground: 210 40% 98%;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Custom global focus states */
+:focus-visible {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 2px;
+}

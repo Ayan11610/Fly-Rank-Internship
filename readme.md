@@ -1,28 +1,36 @@
-# ✈️ Fly Rank — Front-End AI Engineering Project
+# Sentinel AI — AI Code Security Reviewer
 
-Welcome to the **Fly Rank Front-End AI Engineering** repository. This is the main frontend repository for the Fly Rank project/internship.
+Sentinel AI is a production-ready frontend scaffold for an AI-powered code security reviewer, built with Next.js (App Router), TypeScript, and Tailwind CSS.
 
 ---
 
-## 📌 Project Overview
-*This is a placeholder description. Update this section once the specific goals, requirements, and design scopes of the project are determined.*
+## 📌 Features Scaffolded
+
+- **Root Layout & Navigation**: Clean top Navbar, collapsible Mobile Menu, and persistent desktop Sidebar.
+- **Dark Mode Design System**: A dark-theme aesthetic powered by Tailwind classes and customizable HSL variables.
+- **Dashboard Layout**: Metrics summary cards, bar-chart visualizations, and recent scans tracker.
+- **Interactive Uploader**: Tabbed code submit pane supporting drag-and-drop or code paste input.
+- **Vulnerability Inspector**: Interactive listbox findings list linking with read-only code display and remediation recommendation guide.
+- **Report consolidator**: Export buttons supporting HTML/JSON file compile triggers.
+- **Health Validation**: dynamic Server Component dynamically querying an external todo placeholder API.
+- **Placeholder APIs**: Mock routes matching Next.js App Router rules.
 
 ---
 
 ## 🛠️ Technology Stack
-*Add the list of libraries, frameworks, and tools used in this project once finalized:*
-- **Frontend Framework**: (e.g., React / Next.js / Vite)
-- **Styling**: (e.g., Tailwind CSS / Vanilla CSS)
-- **State Management & Data Fetching**: (e.g., Zustand / TanStack Query)
-- **AI Integration**: (e.g., OpenAI / Anthropic APIs, Vercel AI SDK)
+
+- **Framework**: Next.js 15+ (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
 
 ---
 
 ## ⚙️ Getting Started
 
 ### 📋 Prerequisites
-- **Node.js** (v18 or higher recommended)
-- **npm**, **pnpm**, or **yarn**
+- **Node.js** (v20 or higher recommended)
+- **npm**
 
 ### 🔧 Setup & Installation
 
@@ -41,7 +49,31 @@ Welcome to the **Fly Rank Front-End AI Engineering** repository. This is the mai
    npm run build
    ```
 
+4. Run linting checks:
+   ```bash
+   npm run lint
+   ```
+
 ---
 
 ## 📂 Project Structure
-*Document the directory tree and layout here when the project files are initialized.*
+
+```text
+src/
+├── app/                  # Next.js pages & API routes
+│   ├── dashboard/        # Dashboard layout & stats
+│   ├── upload/           # Drag-and-drop file upload
+│   ├── review/           # Code security review views
+│   ├── reports/          # Security reports history
+│   ├── profile/          # User subscription quota
+│   ├── settings/         # Alert threshold settings
+│   ├── health/           # Server-side health fetch page
+│   └── api/              # API placeholders
+├── components/           # Reusable UI & Layout components
+├── hooks/                # Client state hooks
+├── lib/                  # Library utility wrappers
+├── services/             # API caller wrappers
+├── styles/               # Global CSS files
+├── types/                # TypeScript types
+└── utils/                # Date/Severity formatting helpers
+```
